@@ -3,7 +3,13 @@ import math
 print("1 задача! ")
 print("Знайти радіус кола: ")
 
-P = 3.14
+def square_circuit(rad):
+    square_circ = math.pi * math.pow(rad, 2)
+    print(f"Площа кола з радіусом {rad} см дорівнює - {round(square_circ, 2)} см")
+    return
+
+
 r = float(input("Введіть радіус кола: "))
-square_circuit = math.pi * math.pow(r, 2)
-print(f"Площа кола з радіусом {r} см дорівнює - {round(square_circuit, 2)} см")
+
+square_circuit(r)
+
